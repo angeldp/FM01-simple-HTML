@@ -3,12 +3,13 @@
 --bgColor:hsl(215 46% 89% / 1);
 --bgCard:hsl(0 0% 100% / 1);
 --bgQR: hsl(218 44% 22% / 1);
---lgrey:hsl(0, 0%, 62%);
+--lgrey:hsl(0 0% 62% / 1);
+--lgreyA:hsl(0 0% 62% / .333);
 }
 
 
 /* General styles and normalized*/
-body, html{    min-width:375px;}
+body, html{    min-width:320px;}
 html{
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
@@ -22,20 +23,20 @@ body{
     color:var(--lgrey);
     font-family: 'Outfit', sans-serif;
     font-size:15px;
-    box-shadow: var(--lgrey) 0 0 1rem;
+    box-shadow: var(--lgreyA) 0 0 1rem;
 }
 figure{
     margin:0;
 }
 h1 {
     color:black;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: 0.67em 0;
   }
-  p{
-    letter-spacing: 2px;
-  }
+p{
+    letter-spacing: 1px;
+}
 a {
     background-color: transparent;
   }
@@ -46,7 +47,7 @@ a {
   
 /* Mobile first */
 body{
-    width:350px;
+    width:320px;
     padding: 1.25rem;
     border-radius: 1.5rem;
     text-align: center;
