@@ -1,9 +1,9 @@
 /* VARIABLES */
 :root{
---bgColor:hsl(220 15% 55% / 1);
+--bgColor:hsl(215 46% 89% / 1);
 --bgCard:hsl(0 0% 100% / 1);
 --bgQR: hsl(218 44% 22% / 1);
---lgrey:hsl(212 45% 89% / 1);
+--lgrey:hsl(0, 0%, 62%);
 }
 
 
@@ -22,6 +22,7 @@ body{
     color:var(--lgrey);
     font-family: 'Outfit', sans-serif;
     font-size:15px;
+    box-shadow: var(--lgrey) 0 0 1rem;
 }
 figure{
     margin:0;
