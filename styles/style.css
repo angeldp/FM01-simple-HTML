@@ -1,0 +1,83 @@
+/* VARIABLES */
+:root{
+--bgColor:hsl(220 15% 55% / 1);
+--bgCard:hsl(0 0% 100% / 1);
+--bgQR: hsl(218 44% 22% / 1);
+--lgrey:hsl(212 45% 89% / 1);
+}
+
+
+/* General styles and normalized*/
+body, html{    min-width:375px;}
+html{
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+    background-color:var(--bgColor);
+    display:grid;
+    height: 100vh;
+    place-content: center;
+}
+body{
+    background-color: var(--bgCard);
+    color:var(--lgrey);
+    font-family: 'Outfit', sans-serif;
+    font-size:15px;
+}
+figure{
+    margin:0;
+}
+h1 {
+    color:black;
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 0.67em 0;
+  }
+  p{
+    letter-spacing: 2px;
+  }
+a {
+    background-color: transparent;
+  }
+[hidden] {
+    display: none;
+  }
+
+  
+/* Mobile first */
+body{
+    width:350px;
+    padding: 1.25rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+figure>img{
+    display: block;
+    width: 100%;
+    border-radius:1rem;
+}
+
+/* Desktop view */
+
+
+
+
+
+
+
+
+
+
+
+/* Components */
+.noSeVe:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
